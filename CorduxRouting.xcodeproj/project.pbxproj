@@ -8,20 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		5C3C64961E82C84C005C5DD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C64951E82C84C005C5DD7 /* AppDelegate.swift */; };
-		5C3C64981E82C84C005C5DD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C64971E82C84C005C5DD7 /* ViewController.swift */; };
 		5C3C649B1E82C84C005C5DD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C3C64991E82C84C005C5DD7 /* Main.storyboard */; };
 		5C3C649D1E82C84C005C5DD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C3C649C1E82C84C005C5DD7 /* Assets.xcassets */; };
 		5C3C64A01E82C84C005C5DD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C3C649E1E82C84C005C5DD7 /* LaunchScreen.storyboard */; };
+		5CF80F4A1E82CDAD002834D0 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF80F491E82CDAD002834D0 /* AppState.swift */; };
+		5CF80F4C1E82CE27002834D0 /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF80F4B1E82CE27002834D0 /* Reducer.swift */; };
+		5CF80F4F1E82CEC9002834D0 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF80F4E1E82CEC9002834D0 /* AppCoordinator.swift */; };
+		5CF80F511E82D0C6002834D0 /* MainTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF80F501E82D0C6002834D0 /* MainTabCoordinator.swift */; };
+		5CF80F531E82D165002834D0 /* NavigationExampleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF80F521E82D165002834D0 /* NavigationExampleCoordinator.swift */; };
+		5CF80F561E82DDC9002834D0 /* ViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF80F551E82DDC9002834D0 /* ViewControllers.swift */; };
+		816813A4FD36741B2EB641EE /* Pods_CorduxRouting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83CD749E33BDB67C72AC9EAB /* Pods_CorduxRouting.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5338F1C61F9845B02F69F308 /* Pods-CorduxRouting.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CorduxRouting.release.xcconfig"; path = "Pods/Target Support Files/Pods-CorduxRouting/Pods-CorduxRouting.release.xcconfig"; sourceTree = "<group>"; };
 		5C3C64921E82C84C005C5DD7 /* CorduxRouting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CorduxRouting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C3C64951E82C84C005C5DD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5C3C64971E82C84C005C5DD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5C3C649A1E82C84C005C5DD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5C3C649C1E82C84C005C5DD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C3C649F1E82C84C005C5DD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C3C64A11E82C84C005C5DD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CF80F491E82CDAD002834D0 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppState.swift; path = State/AppState.swift; sourceTree = "<group>"; };
+		5CF80F4B1E82CE27002834D0 /* Reducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Reducer.swift; path = State/Reducer.swift; sourceTree = "<group>"; };
+		5CF80F4E1E82CEC9002834D0 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppCoordinator.swift; path = Coordinators/AppCoordinator.swift; sourceTree = "<group>"; };
+		5CF80F501E82D0C6002834D0 /* MainTabCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTabCoordinator.swift; path = Coordinators/MainTabCoordinator.swift; sourceTree = "<group>"; };
+		5CF80F521E82D165002834D0 /* NavigationExampleCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationExampleCoordinator.swift; path = Coordinators/NavigationExampleCoordinator.swift; sourceTree = "<group>"; };
+		5CF80F551E82DDC9002834D0 /* ViewControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllers.swift; path = "View Controllers/ViewControllers.swift"; sourceTree = "<group>"; };
+		83CD749E33BDB67C72AC9EAB /* Pods_CorduxRouting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CorduxRouting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9CB9472B5B51EBE1ED17734 /* Pods-CorduxRouting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CorduxRouting.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CorduxRouting/Pods-CorduxRouting.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				816813A4FD36741B2EB641EE /* Pods_CorduxRouting.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +55,8 @@
 			children = (
 				5C3C64941E82C84C005C5DD7 /* CorduxRouting */,
 				5C3C64931E82C84C005C5DD7 /* Products */,
+				EFD875F1AEA316408DD42BFE /* Pods */,
+				6EE85F28DFBB5EBF738C7842 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +71,60 @@
 		5C3C64941E82C84C005C5DD7 /* CorduxRouting */ = {
 			isa = PBXGroup;
 			children = (
+				5CF80F541E82D780002834D0 /* View Controllers */,
+				5CF80F4D1E82CEAB002834D0 /* Coordinators */,
+				5CF80F481E82CD95002834D0 /* State */,
 				5C3C64951E82C84C005C5DD7 /* AppDelegate.swift */,
-				5C3C64971E82C84C005C5DD7 /* ViewController.swift */,
 				5C3C64991E82C84C005C5DD7 /* Main.storyboard */,
 				5C3C649C1E82C84C005C5DD7 /* Assets.xcassets */,
 				5C3C649E1E82C84C005C5DD7 /* LaunchScreen.storyboard */,
 				5C3C64A11E82C84C005C5DD7 /* Info.plist */,
 			);
 			path = CorduxRouting;
+			sourceTree = "<group>";
+		};
+		5CF80F481E82CD95002834D0 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				5CF80F491E82CDAD002834D0 /* AppState.swift */,
+				5CF80F4B1E82CE27002834D0 /* Reducer.swift */,
+			);
+			name = State;
+			sourceTree = "<group>";
+		};
+		5CF80F4D1E82CEAB002834D0 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				5CF80F4E1E82CEC9002834D0 /* AppCoordinator.swift */,
+				5CF80F501E82D0C6002834D0 /* MainTabCoordinator.swift */,
+				5CF80F521E82D165002834D0 /* NavigationExampleCoordinator.swift */,
+			);
+			name = Coordinators;
+			sourceTree = "<group>";
+		};
+		5CF80F541E82D780002834D0 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5CF80F551E82DDC9002834D0 /* ViewControllers.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		6EE85F28DFBB5EBF738C7842 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83CD749E33BDB67C72AC9EAB /* Pods_CorduxRouting.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EFD875F1AEA316408DD42BFE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C9CB9472B5B51EBE1ED17734 /* Pods-CorduxRouting.debug.xcconfig */,
+				5338F1C61F9845B02F69F308 /* Pods-CorduxRouting.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +134,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C3C64A41E82C84C005C5DD7 /* Build configuration list for PBXNativeTarget "CorduxRouting" */;
 			buildPhases = (
+				084BCBA6610F7928AB32333D /* [CP] Check Pods Manifest.lock */,
 				5C3C648E1E82C84C005C5DD7 /* Sources */,
 				5C3C648F1E82C84C005C5DD7 /* Frameworks */,
 				5C3C64901E82C84C005C5DD7 /* Resources */,
+				9DCD5BAE052D0B3F1FDE1EE1 /* [CP] Embed Pods Frameworks */,
+				D52E35687E182956563D75AA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,12 +198,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		084BCBA6610F7928AB32333D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9DCD5BAE052D0B3F1FDE1EE1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CorduxRouting/Pods-CorduxRouting-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D52E35687E182956563D75AA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CorduxRouting/Pods-CorduxRouting-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5C3C648E1E82C84C005C5DD7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C3C64981E82C84C005C5DD7 /* ViewController.swift in Sources */,
+				5CF80F561E82DDC9002834D0 /* ViewControllers.swift in Sources */,
+				5CF80F4A1E82CDAD002834D0 /* AppState.swift in Sources */,
+				5CF80F511E82D0C6002834D0 /* MainTabCoordinator.swift in Sources */,
+				5CF80F4F1E82CEC9002834D0 /* AppCoordinator.swift in Sources */,
+				5CF80F531E82D165002834D0 /* NavigationExampleCoordinator.swift in Sources */,
+				5CF80F4C1E82CE27002834D0 /* Reducer.swift in Sources */,
 				5C3C64961E82C84C005C5DD7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +378,7 @@
 		};
 		5C3C64A51E82C84C005C5DD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9CB9472B5B51EBE1ED17734 /* Pods-CorduxRouting.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K5E77RCF69;
@@ -272,6 +392,7 @@
 		};
 		5C3C64A61E82C84C005C5DD7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5338F1C61F9845B02F69F308 /* Pods-CorduxRouting.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K5E77RCF69;
@@ -302,6 +423,7 @@
 				5C3C64A61E82C84C005C5DD7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

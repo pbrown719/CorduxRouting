@@ -7,15 +7,32 @@
 //
 
 import UIKit
+import Cordux
+
+typealias MainStore = Cordux.Store<AppState>!
+
+var mainStore: MainStore
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var coordinator: MainTabCoordinator!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+
+        var state = AppState()
+        mainStore = Store(initialState: state, reducer: AppReducer())
+        coordinator = MainTabCoordinator(store: mainStore)
+        coordinator.start(route: state.route)
+
+
+        UIViewController.swizzleLifecycleDelegatingViewControllerMethods()
+        window?.rootViewController = coordinator.rootViewController
+
         return true
     }
 
