@@ -136,12 +136,6 @@ extension NavigationExampleCoordinator: SecondViewControllerHandler {
     }
 }
 
-extension NavigationExampleCoordinator: ThirdViewControllerHandler {
-
-    func nextPressed(controller: ThirdViewController) {
-
-    }
-}
 
 extension NavigationExampleCoordinator: ModalViewControllerHandler {
 

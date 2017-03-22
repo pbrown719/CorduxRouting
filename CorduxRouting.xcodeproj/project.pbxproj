@@ -17,6 +17,7 @@
 		5CF80F511E82D0C6002834D0 /* MainTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF80F501E82D0C6002834D0 /* MainTabCoordinator.swift */; };
 		5CF80F531E82D165002834D0 /* NavigationExampleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF80F521E82D165002834D0 /* NavigationExampleCoordinator.swift */; };
 		5CF80F561E82DDC9002834D0 /* ViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF80F551E82DDC9002834D0 /* ViewControllers.swift */; };
+		5CF80F581E831DEB002834D0 /* ActionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF80F571E831DEB002834D0 /* ActionCoordinator.swift */; };
 		816813A4FD36741B2EB641EE /* Pods_CorduxRouting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83CD749E33BDB67C72AC9EAB /* Pods_CorduxRouting.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		5CF80F501E82D0C6002834D0 /* MainTabCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTabCoordinator.swift; path = Coordinators/MainTabCoordinator.swift; sourceTree = "<group>"; };
 		5CF80F521E82D165002834D0 /* NavigationExampleCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationExampleCoordinator.swift; path = Coordinators/NavigationExampleCoordinator.swift; sourceTree = "<group>"; };
 		5CF80F551E82DDC9002834D0 /* ViewControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllers.swift; path = "View Controllers/ViewControllers.swift"; sourceTree = "<group>"; };
+		5CF80F571E831DEB002834D0 /* ActionCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActionCoordinator.swift; path = Coordinators/ActionCoordinator.swift; sourceTree = "<group>"; };
 		83CD749E33BDB67C72AC9EAB /* Pods_CorduxRouting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CorduxRouting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9CB9472B5B51EBE1ED17734 /* Pods-CorduxRouting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CorduxRouting.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CorduxRouting/Pods-CorduxRouting.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,6 +100,7 @@
 				5CF80F4E1E82CEC9002834D0 /* AppCoordinator.swift */,
 				5CF80F501E82D0C6002834D0 /* MainTabCoordinator.swift */,
 				5CF80F521E82D165002834D0 /* NavigationExampleCoordinator.swift */,
+				5CF80F571E831DEB002834D0 /* ActionCoordinator.swift */,
 			);
 			name = Coordinators;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				5CF80F4A1E82CDAD002834D0 /* AppState.swift in Sources */,
 				5CF80F511E82D0C6002834D0 /* MainTabCoordinator.swift in Sources */,
 				5CF80F4F1E82CEC9002834D0 /* AppCoordinator.swift in Sources */,
+				5CF80F581E831DEB002834D0 /* ActionCoordinator.swift in Sources */,
 				5CF80F531E82D165002834D0 /* NavigationExampleCoordinator.swift in Sources */,
 				5CF80F4C1E82CE27002834D0 /* Reducer.swift in Sources */,
 				5C3C64961E82C84C005C5DD7 /* AppDelegate.swift in Sources */,

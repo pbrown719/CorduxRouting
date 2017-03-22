@@ -22,8 +22,6 @@ extension CenterLabelDisplayable where Self: UIViewController {
     }
 }
 
-
-
 protocol InitialViewControllerHandler: class {
     func nextPressed(controller: InitialViewController)
     func showModalPressed()
@@ -68,12 +66,7 @@ class SecondViewController: ViewController, CenterLabelDisplayable {
     }
 }
 
-protocol ThirdViewControllerHandler: class {
-    func nextPressed(controller: ThirdViewController)
-}
-
 class ThirdViewController: ViewController, CenterLabelDisplayable {
-    weak var handler: ThirdViewControllerHandler?
 
     override func viewDidLoad() {
         super.viewDidLoad()

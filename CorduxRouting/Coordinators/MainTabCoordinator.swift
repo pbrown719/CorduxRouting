@@ -18,7 +18,8 @@ class MainTabCoordinator: NSObject, TabBarControllerCoordinator, SubscriberType 
         self.store = store
 
         scenes = [
-            Scene(prefix: "navigationExample", coordinator: NavigationExampleCoordinator(store))
+            Scene(prefix: "navigationExample", coordinator: NavigationExampleCoordinator(store)),
+            Scene(prefix: "tabSwitchingExample", coordinator: ActionCoordinator(store))
         ]
     }
 
