@@ -18,9 +18,8 @@ struct AppReducer: Reducer {
     func handleAction(_ action: Action, state: AppState) -> AppState {
 
         if let _ = action as? TestAction {
-            print("Here's your action")
             for _ in 0...1000000000 {
-
+                // Doing lots of work
             }
         }
 

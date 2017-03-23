@@ -35,7 +35,7 @@ class ViewController: UIViewController, CenterLabelDisplayable {
     }
 
     func nextPressed() {
-        
+        // Subclasses override
     }
 }
 
@@ -125,7 +125,7 @@ class ActionViewController: UIViewController, CenterLabelDisplayable {
         super.viewDidLoad()
         self.title = "Action VC"
         view.backgroundColor = .purple
-        self.addLabel(with: "Press the action button, switch to the other tab and navigate. After it finishes executing it puts our route in a weird state.")
+        self.addLabel(with: "Press the action button, switch to the other tab and navigate. After it finishes executing it puts our route in a weird state, causing us to jump back to this view.")
 
         addButton()
     }
