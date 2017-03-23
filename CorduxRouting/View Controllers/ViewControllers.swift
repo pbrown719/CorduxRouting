@@ -22,12 +22,29 @@ extension CenterLabelDisplayable where Self: UIViewController {
     }
 }
 
+
+class ViewController: UIViewController, CenterLabelDisplayable {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupNavigationBar()
+    }
+
+    private func setupNavigationBar() {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Next", style: .plain, target: self, action: #selector(nextPressed))
+    }
+
+    func nextPressed() {
+        
+    }
+}
+
 protocol InitialViewControllerHandler: class {
     func nextPressed(controller: InitialViewController)
     func showModalPressed()
 }
 
-class InitialViewController: ViewController, CenterLabelDisplayable {
+class InitialViewController: ViewController {
     weak var handler: InitialViewControllerHandler?
 
     override func viewDidLoad() {
@@ -51,7 +68,7 @@ protocol SecondViewControllerHandler: class {
     func nextPressed(controller: SecondViewController)
 }
 
-class SecondViewController: ViewController, CenterLabelDisplayable {
+class SecondViewController: ViewController {
     weak var handler: SecondViewControllerHandler?
 
     override func viewDidLoad() {
@@ -66,7 +83,7 @@ class SecondViewController: ViewController, CenterLabelDisplayable {
     }
 }
 
-class ThirdViewController: ViewController, CenterLabelDisplayable {
+class ThirdViewController: ViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -94,5 +111,34 @@ class ModalViewController: UIViewController, CenterLabelDisplayable {
 
     func dismissPressed() {
         handler?.dismissModal()
+    }
+}
+
+protocol ActionViewControllerHandler: class {
+    func actionPressed()
+}
+
+class ActionViewController: UIViewController, CenterLabelDisplayable {
+    weak var handler: ActionViewControllerHandler?
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.title = "Action VC"
+        view.backgroundColor = .purple
+        self.addLabel(with: "Press the action button, switch to the other tab and navigate. After it finishes executing it puts our route in a weird state.")
+
+        addButton()
+    }
+
+    func addButton() {
+        let button = UIButton(frame: CGRect(x: 50, y: view.frame.size.height-200, width: view.frame.size.width-100, height: 100))
+        button.backgroundColor = .orange
+        button.setTitle("Action Button", for: .normal)
+        button.addTarget(self, action: #selector(ActionViewController.buttonPressed), for: .touchUpInside)
+        view.addSubview(button)
+    }
+
+    func buttonPressed() {
+        handler?.actionPressed()
     }
 }

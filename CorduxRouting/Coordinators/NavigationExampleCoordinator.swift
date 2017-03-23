@@ -136,7 +136,6 @@ extension NavigationExampleCoordinator: SecondViewControllerHandler {
     }
 }
 
-
 extension NavigationExampleCoordinator: ModalViewControllerHandler {
 
     func dismissModal() {
@@ -145,20 +144,3 @@ extension NavigationExampleCoordinator: ModalViewControllerHandler {
         }
     }
 }
-
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        setupNavigationBar()
-    }
-
-    private func setupNavigationBar() {
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Next", style: .plain, target: self, action: #selector(nextPressed))
-    }
-
-    func nextPressed() {
-
-    }
-}
-

@@ -23,9 +23,8 @@ class ActionCoordinator: NavigationControllerCoordinator {
     }
 
     func start(route: Route) {
-        let mainViewController = UIViewController()
-        mainViewController.view.backgroundColor = .purple
-        mainViewController.title = "Right VC"
+        let mainViewController = ActionViewController()
+        mainViewController.handler = self
         self.navigationController.setViewControllers([mainViewController], animated: false)
     }
 }
@@ -51,5 +50,16 @@ extension ActionCoordinator {
             return
         }
         store.route(.pop(context.routeSegment.route()))
+    }
+}
+
+extension ActionCoordinator: ActionViewControllerHandler {
+
+    func actionPressed() {
+        let queue = DispatchQueue(label: "LongDurationQueue")
+        queue.async { 
+            self.store.dispatch(TestAction.longDurationAction)
+        }
+
     }
 }
